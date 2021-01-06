@@ -10,8 +10,15 @@ body {
 
 header {
   width: 100%;
-  height: 60px;
+  height: 40%;
   background-color: #ffffff;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .header-container {
@@ -20,15 +27,16 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 1rem 0;
 }
 
 .header-title-container {
-  width: 200px;
+  width: 20%;
   display: flex;
   align-items: center;
   font-size: 1.1rem;
   font-weight: bold;
+  margin: 0 2rem 0 0;
 }
 
 .header-logo {
@@ -36,10 +44,112 @@ header {
 }
 
 .header-menu-container {
-  width: 500px;
+  width: 60%;
   list-style: none;
   display: flex;
   justify-content: space-around;
   font-weight: bold;
   font-size: 0.9rem;
+  padding: 0;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-title-container {
+  padding: 0 0.5rem;
+}
+
+.main-title-sub {
+  color: #005cb2;
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.main-title-message {
+  font-weight: bold;
+  font-size: 2.7rem;
+  margin-bottom: 2rem;
+}
+
+.main-title-btn {
+  background-color: #e6ceff;
+  border-radius: 100px;
+  padding: 0.3rem 1.5rem;
+  font-weight: bold;
+  border-style: none;
+}
+
+.main-title-img {
+  width: 500px;
+  height: 450px;
+  border-radius: 5px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  padding: 5rem 0;
+}
+
+.section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-card-container {
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-card-icon {
+  font-size: 2.5rem;
+  padding: 2rem 0;
+}
+
+.section-card-title {
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .header-title-container {
+    display: none;
+  }
+
+  .main-title-img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .header-menu-container {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
